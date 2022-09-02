@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Robert Nickson - WebDev portfolio site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header-two">
+      <nav>
+        <a href="index.html"><img src="images/logo.JPEG" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <button class="nav-close" onclick="hideMenu()">Close</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pageOne.html">Gye-Jok-San</a></li>
+            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
+            <li><a href="pageThree.html">Sik-Jang-San</a></li>
+          </ul>
+        </div>
+        <button class="nav-open" id="openbutton" onclick="showMenu()">
+          Menu
+        </button>
+      </nav>
+
+      <div class="text-box">
+        <h1>
+          구봉산 <br />
+          Gu-Bong-San
+        </h1>
+        <p>'Gu Bong' Mountain</p>
+        <a href="#mainContent" class="main-link">Clcik here or scroll down</a>
+      </div>
+    </section>
+
+    <section class="pageOneContent" id="mainContent">
+      <div class="description">
+        <h2>
+          구봉산 <br />
+          Gu-Bong-San <br />
+          'Gu Bong' Mountain
+        </h2>
+        <p>
+          Gubongsan Mountain is a 264m high mountain in Seo-gu, Daejeon.
+          Gubongsan Mountain is surrounded by Gasuwon-dong, Gwanjeo-dong,
+          Goegok-dong, Heukseok-dong, and Giseong-dong. It is said that in the
+          past, a scholar came down and did not know that the ax was rotting
+          while watching the game of Go, and it was named Gubongsan Mountain
+          because there were nine mountain peaks. On Yeojido Island, it is
+          recorded as Gubongsan Mountain by writing Saebong, which means phoenix
+          bird. In addition, it is said to be a famous mountain in the form of
+          Gunsin Ipjo-hyung because nine peaks are lined up in a row, as if the
+          ministers bend their backs and enter the Gyeryongsan New Town.
+        </p>
+      </div>
+
+      <h2 id="galleryTitle">Gallery</h2>
+      <section class="photoArray">
+        <div>
+          <img src="images\gu bong san\20160127_113637.jpg" alt="an image" />
+        </div>
+        <div>
+          <img src="images\gu bong san\20160127_121559.jpg" alt="an image" />
+        </div>
+        <div>
+          <img src="images\gu bong san\20160127_122011.jpg" alt="an image" />
+        </div>
+        <div>
+          <img src="images\gu bong san\20160127_122438.jpg" alt="an image" />
+        </div>
+        <div>
+          <img src="images\gu bong san\20160127_130243.jpg" alt="an image" />
+        </div>
+      </section>
+
+      <div class="map">
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9096.72656275932!2d127.32539228361952!3d36.28371807990147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x609213ab14bb46be!2zMzbCsDE3JzAzLjIiTiAxMjfCsDE5JzU0LjEiRQ!5e0!3m2!1sen!2suk!4v1660771918492!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="ctaTwo">
+      <a href="#top" class="main-link">Return to top</a>
+    </section>
+
+    <!-- javascript for menu -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+        openbutton.style.opacity = "1";
+      }
+    </script>
+  </body>
+</html>

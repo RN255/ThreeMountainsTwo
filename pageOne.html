@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Robert Nickson - WebDev portfolio site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.JPEG" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <button class="nav-close" onclick="hideMenu()">Close</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pageOne.html">Gye-Jok-San</a></li>
+            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
+            <li><a href="pageThree.html">Sik-Jang-San</a></li>
+          </ul>
+        </div>
+        <button class="nav-open" id="openbutton" onclick="showMenu()">
+          Menu
+        </button>
+      </nav>
+
+      <div class="text-box">
+        <h1>
+          계족산 <br />
+          Gye-Jok-San
+        </h1>
+        <p>'Chicken foot' Mountain</p>
+        <a href="#mainContent" class="main-link">Clcik here or scroll down</a>
+      </div>
+    </section>
+
+    <section class="pageOneContent" id="mainContent">
+      <div class="description">
+        <h2>
+          계족산 <br />
+          Gye-Jok-San <br />
+          'Chicken foot' Mountain
+        </h2>
+        <p>
+          Gyejoksan is a mountain of South Korea. It has an elevation of 429
+          meters. The mountains are spread like chicken feet. In the west,
+          Sungjae Mountain (390 m) stands side by side. It is made up of
+          mountain peaks in four round circles, followed by mountains by
+          Kwangbyeongsan, Usanbong, and Gahaksan. The mountain is the location
+          of Jangdong Green Bath which opened in June 1995. Gyejoksan is one of
+          the eight popular places for sightseers which are designated by city
+          government. Those eight sights include the mountains Sikjangsan,
+          Bomunsan, Gubongsan (구봉산), and Jangtaesan, the lake Daecheonghosu,
+          as well as Yuseong Spa, and Expo Science Park.
+        </p>
+      </div>
+
+      <h2 id="galleryTitle">Gallery</h2>
+      <section class="photoArray">
+        <div>
+          <img
+            src="images\chickenfoot mountain\20151212_130118.jpg"
+            alt="an image"
+          />
+        </div>
+        <div>
+          <img
+            src="images\chickenfoot mountain\20151212_122421.jpg"
+            alt="an image"
+          />
+        </div>
+        <div>
+          <img
+            src="images\chickenfoot mountain\20151212_115847.jpg"
+            alt="an image"
+          />
+        </div>
+        <div>
+          <img
+            src="images\chickenfoot mountain\20151212_134833.jpg"
+            alt="an image"
+          />
+        </div>
+        <div>
+          <img
+            src="images\chickenfoot mountain\20151212_140749.jpg"
+            alt="an image"
+          />
+        </div>
+      </section>
+
+      <div class="map">
+        <h2>Map</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18168.671561817206!2d127.43395563817599!3d36.38989066650684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356537ee9f285f41%3A0x44ec28988b315703!2sGyejoksan%20Fortress!5e0!3m2!1sen!2suk!4v1660769966163!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="ctaTwo">
+      <a href="#top" class="main-link">Return to top</a>
+    </section>
+
+    <!-- javascript for menu -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+        openbutton.style.opacity = "1";
+      }
+    </script>
+  </body>
+</html>

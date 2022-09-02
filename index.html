@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Three mountains in Dajeon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header" id="top">
+      <nav>
+        <a href="index.html"><img src="images/logo.JPEG" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <button class="nav-close" onclick="hideMenu()">Close</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pageOne.html">Gye-Jok-San</a></li>
+            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
+            <li><a href="pageThree.html">Sik-Jang-San</a></li>
+          </ul>
+        </div>
+        <button class="nav-open" id="openbutton" onclick="showMenu()">
+          Menu
+        </button>
+      </nav>
+
+      <div class="text-box">
+        <h1>Three Mountains in Dajeon</h1>
+        <p>Hello and welcome</p>
+        <a href="#mainContent" class="main-link">Clcik here or scroll down</a>
+      </div>
+    </section>
+
+    <section class="course" id="mainContent">
+      <h3>A wonderful world in Daejeon...</h3>
+
+      <div class="row">
+        <div class="col">
+          <h3>Beautiful scenery</h3>
+          <p>
+            When you climb the mountains of Daejeon you can enjoy the wonderul scenery 
+            of the city and country side. See the amazing world in front of you!
+          </p>
+        </div>
+        <div class="col">
+          <h3>Health benefits</h3>
+          <p>
+            Walking is an excellent form of exercise. Improve your strength, cardiovascular health
+            and body composition by walking on the mountains!
+          </p>
+        </div>
+        <div class="col">
+          <h3>Make better friends</h3>
+          <p>
+            Why not walk with you friends? You can have a great time together, enjoy the mountainsand improve your friendships at the same time!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- mountains -->
+
+    <section class="mountains">
+      <h1>A new world awaits you</h1>
+      <p>The benefits of walking on mountains</p>
+
+      <div class="row">
+        <div class="mountainColumn">
+          <img src="images\shikjang san\20151219_122717.jpg" alt="image of mountain" />
+          <div class="layer">
+            <h3>Scenery</h3>
+          </div>
+        </div>
+        <div class="mountainColumn">
+          <img src="images\gu bong san\20160127_121559.jpg" alt="image of mountain" />
+          <div class="layer">
+            <h3>Health</h3>
+          </div>
+        </div>
+        <div class="mountainColumn">
+          <img src="images\chickenfoot mountain\20151212_140749.jpg" alt="image of mountain" />
+          <div class="layer">
+            <h3>Friendship</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daejeon -->
+
+    <section class="daejeon">
+      <h1>The three mountains of Daejeon</h1>
+      <p>Three places your can visit</p>
+      <div class="row">
+        <div class="daejeonColumn">
+          <a href="pageOne.html"><img src="images\chickenfoot mountain\20151212_134833.jpg" alt="image of mountain" /></a>
+            <h3>계족산</h3>
+            <p>Gye-Jok-San </p>
+        </div>
+        <div class="daejeonColumn">
+          <a href="pageTwo.html"><img src="images\gu bong san\20160127_113637.jpg" alt="image of mountain" /></a>
+            <h3>구봉산</h3>
+            <p>Gu-Bong-San </p>
+        </div>
+        <div class="daejeonColumn">
+          <a href="pageThree.html"><img src="images\shikjang san\20151219_121522.jpg" alt="image of mountain" /></a>
+            <h3>식장산</h3>
+            <p>Sik-Jang-San </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+
+    <section class="cta">
+      <h1>Three Mountains in Daejeon</h1>
+      <a href="#top" class="main-link">Return to top</a>
+    </section>
+
+    </section>
+
+    <!-- javascript for menu -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+        openbutton.style.opacity = "1";
+      }
+    </script>
+  </body>
+</html>
