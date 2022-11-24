@@ -22,7 +22,7 @@ This was one of the first websites I created so I choose a topic I was familiar 
 - using flex boxes
 - instagram style photo gallery
 
-## future development
+## Future development
 - the layout of the main page could be changed to make it more interesting, the rectangles look a bit boring.
 - the footer section needs to be developed
 - more information for each mountain
