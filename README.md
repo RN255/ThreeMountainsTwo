@@ -28,6 +28,7 @@ This was one of the first websites I created so I choose a topic I was familiar 
 - more information for each mountain
 - more mountains or locations could be added
 - the social media icons in the footer look too large
+- add in weather for each location
 
 ## How to use
 Website is live at: https://rn255.github.io/ThreeMountainsTwo
