@@ -26,7 +26,7 @@ nav {
 }
 
 nav img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 100px;
 }
 
@@ -254,6 +254,7 @@ h3 {
   color: white;
   margin-bottom: 30px;
   padding: 0;
+  font-size: 18px;
 }
 
 .cta h1 a {
@@ -268,6 +269,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin: 30px 35%;
+  font-size: 14px;
 }
 
 .cta ul li a {
@@ -277,38 +279,15 @@ h3 {
 
 /* social media icons */
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
 #SMicons a {
   margin: 0 1%;
 }
+
+#SMicons img {
+  width: 30px;
+  height: 30px;
+}
+
 
 /* page one style */
 
@@ -532,6 +511,7 @@ h3 {
   }
 
   /* footer */
+
   .cta ul {
     margin-top: 2%;
     list-style: none;
