@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Three mountains in Dajeon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images\mountainTabIcon.png" />
+  </head>
+  <body>
+    <section class="header" id="top">
+      <nav>
+        <a href="index.html"><img src="images\mountain.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <button class="nav-close" onclick="hideMenu()">Close</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pageOne.html">Gye-Jok-San</a></li>
+            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
+            <li><a href="pageThree.html">Sik-Jang-San</a></li>
+          </ul>
+        </div>
+        <button class="nav-open" id="openbutton" onclick="showMenu()">
+          Menu
+        </button>
+      </nav>
+
+      <div class="privacy-text-box">
+        <h1>Privacy policy</h1>
+        <p>Updated October 27, 2021</p>
+        <p>
+          Our Privacy Policy describes how we collect, use, and share your
+          personal data.
+        </p>
+        <p>
+          In addition to this Privacy Policy, we provide data and privacy
+          information embedded in our products and certain features that ask to
+          use your personal information. This product-specific information is
+          accompanied by our Data & Privacy Icon.
+        </p>
+        <p>
+          You will be given an opportunity to review this product-specific
+          information before using these features. You also can view this
+          information at any time, either in settings related to those features
+          and/or online at mountains.com/uk/legal/privacy/data.
+        </p>
+        <p>
+          Please take a moment to familiarize yourself with our privacy
+          practices, accessible via the headings below, and contact us if you
+          have any questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- call to action -->
+
+    <section class="cta" id="privacyCta">
+      <div id="footerTitleDiv">
+        <a href="index.html">
+          <img src="images/mountain.png" alt="logo" />
+          <h1>Three Mountains in daejeon</h1>
+        </a>
+      </div>
+      <div id="footerColumns">
+        <div>
+          <h4>Mountains</h4>
+          <ul>
+            <li><a href="pageOne.html">Gye-Jok-San</a></li>
+            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
+            <li><a href="pageThree.html">Sik-Jang-San</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="pageOne.html">Contact</a></li>
+            <li><a href="privacyPolicy.html">Privacy policy</a></li>
+            <!-- <li><a href="pageThree.html">Other</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div id="SMicons">
+        <a href="#"><img src="images\facebook.png" alt="facebook icon" /></a>
+        <a href="#"><img src="images\youtube.png" alt="youtube icon" /></a>
+        <a href="#"><img src="images\twitter.png" alt="twitter icon" /></a>
+        <a href="#"><img src="images\instagram.png" alt="instagram icon" /></a>
+      </div>
+    </section>
+
+    <!-- javascript for menu -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        openbutton.style.opacity = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+        openbutton.style.opacity = "1";
+      }
+    </script>
+  </body>
+</html>
