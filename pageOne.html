@@ -62,6 +62,7 @@
       </div>
 
       <div id="weather">
+        <h2>Current Weather</h2>
         <div class="container">
           <div class="icon">---</div>
           <div class="temp">-°C</div>
@@ -207,8 +208,11 @@
                 summary.textContent = data.weather[0].description;
                 loc.textContent = data.name + "," + data.sys.country;
                 let icon1 = data.weather[0].icon;
-                icon.innerHTML = `<img src="icons/${icon1}.svg" style= 'height:10rem'/>`;
+                icon.innerHTML = `<img src=http://openweathermap.org/img/wn/${icon1}@2x.png>`;
+                console.log('${icon1}');                
+      
               });
+
           });
         }
       });
