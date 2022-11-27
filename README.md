@@ -32,4 +32,4 @@ This was one of the first websites I created so I choose a topic I was familiar 
 Website is live at: https://rn255.github.io/ThreeMountainsTwo
 
 ## Screenshot
-![Three Mountains Screenshot](https://github.com/RN255/ThreeMountainsTwo/blob/main/images/threeMountainsDaejeon.jpg)
+![Three Mountains Screenshot](https://github.com/RN255/ThreeMountainsTwo/blob/main/images/threeMountainsScreenshot.jpg)
