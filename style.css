@@ -241,7 +241,7 @@ h3 {
 /* call to aciton */
 
 .cta {
-  margin: 100px auto;
+  margin: 100px auto 0;
   width: 100%;
   background-image: url(images/background.jpg);
   background-position: center;
@@ -250,34 +250,55 @@ h3 {
   padding: 2% 0;
 }
 
-.cta h1 {
-  color: white;
-  margin-bottom: 30px;
+.cta #footerTitleDiv {
   padding: 0;
   font-size: 18px;
 }
 
-.cta h1 a {
+.cta #footerTitleDiv a {
   text-decoration: none;
+}
+
+.cta #footerTitleDiv a h1 {
   color: white;
 }
 
-.cta ul {
-  margin-top: 2%;
-  list-style: none;
+.cta #footerTitleDiv a p {
   color: white;
+}
+
+.cta #footerTitleDiv img {
+  width: 50px;
+  height: 50px;
+}
+
+#footerTitleDiv {
+  margin-bottom: 20px;
+}
+
+#footerColumns {
   display: flex;
-  justify-content: space-between;
-  margin: 30px 35%;
-  font-size: 14px;
+  justify-content: space-around;
+  color: white;
+  line-height: 2em;
+  width: 60%;
+  margin: 0 auto 20px;
 }
 
-.cta ul li a {
+#footerColumns ul li {
+  list-style: none;
+}
+
+#footerColumns ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* social media icons */
+#SMicons {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
 
 #SMicons a {
   margin: 0 1%;
@@ -287,7 +308,6 @@ h3 {
   width: 30px;
   height: 30px;
 }
-
 
 /* page one style */
 
@@ -512,17 +532,8 @@ h3 {
 
   /* footer */
 
-  .cta ul {
-    margin-top: 2%;
-    list-style: none;
-    color: white;
-    display: list-item;
-    justify-content: space-between;
-    margin: 30px 35% 20px;
-  }
-
-  .cta ul li {
-    margin: 5px;
+  #footerColumns {
+    width: 100%;
   }
 
   /* responsive map */
