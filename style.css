@@ -9,7 +9,7 @@ html {
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-image: url(images/background.jpg);
   /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/background.jpg); */
@@ -484,6 +484,101 @@ h3 {
   margin: 10px auto 0;
 }
 
+/* contact page  */
+
+/* form section  */
+
+#contactHeader {
+  height: 150px;
+}
+
+#formSection {
+  width: 100%;
+  /* background-color: rgb(240, 239, 239); */
+  padding-bottom: 120px;
+}
+
+#formContainer {
+  width: fit-content;
+  margin: auto;
+  padding-top: 75px;
+}
+
+#formSection h2 {
+  /* padding-bottom: 15px; */
+  text-align: center;
+}
+
+#formSection p {
+  text-align: center;
+}
+
+#formDiv {
+  margin-top: 35px;
+}
+
+form label {
+  text-align: left;
+  display: inline-block;
+  width: 225px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+form label span {
+  background-color: #70afe9;
+  color: white;
+  font-size: 12px;
+  padding: 3px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+form input {
+  width: 600px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: rgb(240, 239, 239);
+}
+
+form textarea {
+  border: none;
+  outline: none;
+  width: 600px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(240, 239, 239);
+}
+
+form #messageLabel {
+  position: relative;
+  top: -80px;
+}
+
+#buttonHolder {
+  width: fit-content;
+  margin: auto;
+}
+
+form #submitButton {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto;
+}
+
+form #submitButton:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .text-box h1 {
     font-size: 20px;
@@ -584,5 +679,45 @@ h3 {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+  }
+
+  /* contact page  */
+
+  /* forms section  */
+
+  /* form section  */
+
+  #formContainer {
+    width: 90vw;
+    margin: 0 2% 0;
+  }
+
+  form label {
+    width: 100%;
+  }
+
+  form label {
+    margin: 30px 0 10px;
+  }
+
+  form label span {
+    margin-right: 5px;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  form #messageLabel {
+    top: 0px;
+  }
+
+  #buttonHolder {
+    margin: 50px auto 0;
   }
 }

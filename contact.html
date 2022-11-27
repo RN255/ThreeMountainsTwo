@@ -13,7 +13,7 @@
     <link rel="icon" href="images\mountainTabIcon.png" />
   </head>
   <body>
-    <section class="header" id="top">
+    <section class="header" id="contactHeader">
       <nav>
         <a href="index.html"><img src="images\mountain.png" alt="logo" /></a>
         <div class="nav-links" id="navLinks">
@@ -29,41 +29,76 @@
           Menu
         </button>
       </nav>
+    </section>
 
-      <div class="privacy-text-box">
-        <h1>Privacy policy</h1>
-        <p>Updated October 27, 2021</p>
-        <p>
-          Our Privacy Policy describes how we collect, use, and share your
-          personal data.
-        </p>
-        <p>
-          In addition to this Privacy Policy, we provide data and privacy
-          information embedded in our products and certain features that ask to
-          use your personal information. This product-specific information is
-          accompanied by our Data & Privacy Icon.
-        </p>
-        <p>
-          You will be given an opportunity to review this product-specific
-          information before using these features. You also can view this
-          information at any time, either in settings related to those features
-          and/or online at mountains.com/uk/legal/privacy/data.
-        </p>
-        <p>
-          Please take a moment to familiarize yourself with our privacy
-          practices, accessible via the headings below, and contact us if you
-          have any questions.
-        </p>
+    <!-- contact section  -->
+
+    <section id="formSection">
+      <div id="formContainer">
+        <div>
+          <h2>Contact</h2>
+          <p>Please send us a message</p>
+        </div>
+        <div id="formDiv">
+          <form>
+            <label for="personName">name<span>required</span></label>
+            <input
+              type="text"
+              id="personName"
+              name="personName"
+              maxlength="100"
+              required
+            />
+            <br />
+
+            <label for="email">email address<span>required</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="100"
+              required
+            />
+            <br />
+
+            <label for="phoneNo">phone number</label>
+            <input
+              type="text"
+              id="phoneNo"
+              name="phoneNo"
+              pattern="[0-9]+"
+              maxlength="100"
+            />
+            <br />
+
+            <label for="message" id="messageLabel"
+              >message<span>required</span></label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols=""
+              rows="10"
+              maxlength="5000"
+              required
+            ></textarea>
+            <br />
+
+            <div id="buttonHolder">
+              <input type="submit" value="send" id="submitButton" />
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
     <!-- call to action -->
 
-    <section class="cta" id="privacyCta">
+    <section class="cta">
       <div id="footerTitleDiv">
         <a href="index.html">
           <img src="images/mountain.png" alt="logo" />
-          <h1>Three Mountains in Daejeon</h1>
+          <h1>Three Mountains in daejeon</h1>
         </a>
       </div>
       <div id="footerColumns">
