@@ -1,11 +1,14 @@
-// variables
-// why not add more?
-$white-text-color: rgb(255, 255, 255);
+@import "variables";
+@import "pageHeaders";
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $primary-background-color;
 }
 
 html {
@@ -27,32 +30,32 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-}
 
-nav img {
-  /* border-radius: 50%; */
-  width: 100px;
+  img {
+    /* border-radius: 50%; */
+    width: 100px;
+  }
 }
 
 .nav-links {
   /* flex: 1;
     text-align: right; */
+
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    /* position: relative */
+
+    a {
+      color: $primary-text-color;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
 }
 
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px 20px;
-  /* position: relative */
-}
-
-.nav-links ul li a {
-  color: $white-text-color;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.nav-links ul li::after {
+.nav-links ul li .nav-links ul li::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -68,27 +71,27 @@ nav img {
 
 .text-box {
   width: 90%;
-  color: $white-text-color;
+  color: $primary-text-color;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
 
-.text-box h1 {
-  font-size: 62px;
-}
+  h1 {
+    font-size: 62px;
+  }
 
-.text-box p {
-  font-size: 20px;
-  margin: 10px 0 50px;
+  p {
+    font-size: 20px;
+    margin: 10px 0 50px;
+  }
 }
 
 .main-link {
   /* display: inline-block; */
   text-decoration: none;
-  color: $white-text-color;
+  color: $primary-text-color;
   border: 2px solid white;
   padding: 12px 34px;
   font-size: 13px;
@@ -117,10 +120,15 @@ nav img {
   margin: auto;
   text-align: center;
   padding-top: 100px;
-}
 
-.course p {
-  text-align: left;
+  h3 {
+    color: set-text-color($primary-background-color);
+  }
+
+  p {
+    text-align: left;
+    color: set-text-color($primary-background-color);
+  }
 }
 
 .row {
@@ -154,6 +162,7 @@ h3 {
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  color: set-text-color($primary-background-color);
 }
 
 .mountainColumn {
@@ -162,14 +171,15 @@ h3 {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .mountains h1 {
   padding-bottom: 25px;
-}
-.mountainColumn img {
-  width: 100%;
-  display: block;
 }
 
 .layer {
@@ -189,7 +199,7 @@ h3 {
 .layer h3 {
   width: 100%;
   bottom: 49%;
-  color: $white-text-color;
+  color: $primary-text-color;
   /* left: 50%;
     transform: translateX(-50%); */
   position: absolute;
@@ -210,10 +220,11 @@ h3 {
   margin: auto;
   text-align: center;
   padding-top: 100px;
-}
+  color: set-text-color($primary-background-color);
 
-.daejeon h1 {
-  padding: 20px;
+  h1 {
+    padding: 20px;
+  }
 }
 
 .daejeonColumn {
@@ -221,27 +232,27 @@ h3 {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-}
 
-.daejeonColumn img {
-  width: 100%;
-  height: 80%;
-  border-radius: 10px;
-  object-fit: cover;
+  img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
 .daejeonColumn img:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
-}
-
-.daejeonColumn h3 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.daejeonColumn p {
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 /* the end of the main section  */
@@ -256,22 +267,22 @@ h3 {
   background-size: cover;
   text-align: center;
   padding: 2% 0;
+
+  #footerTitleDiv {
+    padding: 0;
+    font-size: 18px;
+
+    a {
+      text-decoration: none;
+
+      h1 {
+        color: $primary-text-color;
+      }
+    }
+  }
 }
 
-.cta #footerTitleDiv {
-  padding: 0;
-  font-size: 18px;
-}
-
-.cta #footerTitleDiv a {
-  text-decoration: none;
-}
-
-.cta #footerTitleDiv a h1 {
-  color: $white-text-color;
-}
-
-.cta #footerTitleDiv img {
+.cta #footerTitleDiv a img {
   width: 50px;
   height: 50px;
 }
@@ -283,51 +294,37 @@ h3 {
 #footerColumns {
   display: flex;
   justify-content: space-around;
-  color: $white-text-color;
+  color: $primary-text-color;
   line-height: 2em;
   width: 60%;
   margin: 0 auto 20px;
-}
 
-#footerColumns ul li {
-  list-style: none;
-}
+  ul li {
+    list-style: none;
 
-#footerColumns ul li a {
-  text-decoration: none;
-  color: $white-text-color;
+    a {
+      text-decoration: none;
+      color: $primary-text-color;
+    }
+  }
 }
 
 #SMicons {
   width: 60%;
   margin: auto;
   text-align: center;
-}
 
-#SMicons a {
-  margin: 0 1%;
-}
+  a {
+    margin: 0 1%;
+  }
 
-#SMicons img {
-  width: 25px;
-  height: 25px;
+  img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /* page one style */
-
-.sub-header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url(../images/backgroundPageOne.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: $white-text-color;
-}
-
-.sub-header h1 {
-  margin-bottom: 0;
-}
 
 .pageOneContent {
   width: 80%;
@@ -335,39 +332,40 @@ h3 {
   padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
-}
+  color: set-text-color($primary-background-color);
 
-.pageOneContent .description {
-  margin-top: 50px;
-  margin-bottom: 75px;
-}
+  .description {
+    margin-top: 50px;
+    margin-bottom: 75px;
 
-.pageOneContent .description h2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  line-height: 1.5em;
-}
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      line-height: 1.5em;
+    }
 
-.pageOneContent .description p {
-  line-height: 1.5em;
-  text-align: left;
+    p {
+      line-height: 1.5em;
+      text-align: left;
+    }
+  }
 }
 
 .pageOneColumn {
   flex-basis: 48%;
   padding: 30px 2px;
-}
 
-.pageOneColumn img {
-  max-width: 75%;
-}
+  img {
+    max-width: 75%;
+  }
 
-.pageOneColumn h1 {
-  padding-top: 0;
-}
+  h1 {
+    padding-top: 0;
+  }
 
-.pageOneColumn p {
-  padding: 15px 0 25px;
+  p {
+    padding: 15px 0 25px;
+  }
 }
 
 .map {
@@ -384,14 +382,14 @@ h3 {
   padding-bottom: 75%;
   height: 0;
   overflow: hidden;
-}
 
-.google-maps iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 /* photo array */
@@ -407,6 +405,12 @@ h3 {
   grid-template-areas:
     "photoOne photoTwo photoThree"
     "photoOne photoFour photoFive";
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* .photoArray div {
@@ -417,12 +421,6 @@ h3 {
   grid-area: photoOne;
 }
 
-.photoArray img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #galleryTitle {
   padding: 50px;
 }
@@ -431,57 +429,25 @@ h3 {
   padding: 50px;
 }
 
-/* page two */
-
-.sub-header-two {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url(../images/backgroundPageTwo.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: $white-text-color;
-}
-
-.sub-header-two h1 {
-  margin-bottom: 0;
-}
-
-/* page three */
-
-.sub-header-three {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url(../images/backgroundPageThree.jpg);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: $white-text-color;
-}
-
-.sub-header-three h1 {
-  margin-bottom: 0;
-}
-
 /* privacy policy  */
 
 .privacy-text-box {
   width: 90%;
-  color: $white-text-color;
+  color: $primary-text-color;
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
 
-.privacy-text-box h1 {
-  font-size: 42px;
-}
+  h1 {
+    font-size: 42px;
+  }
 
-.privacy-text-box p {
-  font-size: 16px;
-  margin: 10px 0 10px;
+  p {
+    font-size: 16px;
+    margin: 10px 0 10px;
+  }
 }
 
 #privacyCta {
@@ -500,6 +466,7 @@ h3 {
   width: 100%;
   /* background-color: rgb(240, 239, 239); */
   padding-bottom: 120px;
+  color: set-text-color($primary-background-color);
 }
 
 #formContainer {
@@ -531,7 +498,7 @@ form label {
 
 form label span {
   background-color: #70afe9;
-  color: $white-text-color;
+  color: $primary-text-color;
   font-size: 12px;
   padding: 3px;
   float: right;
@@ -608,7 +575,7 @@ form #submitButton:hover {
     display: block;
     background: transparent;
     border: 2px solid white;
-    color: $white-text-color;
+    color: $primary-text-color;
     margin: 10px;
     padding: 5px;
     font-size: 20px;
@@ -625,7 +592,7 @@ form #submitButton:hover {
     display: block;
     background: transparent;
     border: 2px solid white;
-    color: $white-text-color;
+    color: $primary-text-color;
     margin: 10px;
     padding: 5px;
     font-size: 22px;
