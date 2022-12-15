@@ -6,7 +6,7 @@ This was one of the first websites I created so I choose a topic I was familiar 
 
 ## Tech used
 - HTML
-- CSS
+- Sass/CSS
 - JavaScript
 
 ## Project features
@@ -17,6 +17,8 @@ This was one of the first websites I created so I choose a topic I was familiar 
 - correctly sized and responsive google map
 - social media link section
 - weather API for the current weather in Daejeon
+- Uses Sass to style the pages 
+    - primary color can be changed and text color will change automatically if background color is changed
 
 ## Lessons learnt
 - I was familiar with many of the concepts having studied them but this was one of my first attempts at putting them into a functioning site.
