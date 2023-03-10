@@ -34,29 +34,35 @@
     </section>
 
     <section id="introSection">
-      <div>
-        <h2>Mountain Ceremony</h2>
-        <h3>At our beautiful mountain venue</h3>
-        <span></span><img src="images\mountain.png" alt="logo" /><span></span>
-        <p>Our Mountain Venue in the heart of Korea.</p>
-        <p>
-          A breath-taking venue just a short distance from Daejeon, the
-          mountains of Daejeon are among the most romantic and magical venues in
-          Korea. With acres of tranquil grounds, beautiful places, Korean
-          countryside, and impeccable facilities, our city is located in the
-          heart of Korea and makes for the most perfectly unique day.
-        </p>
-        <p>
-          Daejeon can host every part of your fairytale visit. From arrival to
-          the leaving and every moment in between, let us help you create a day
-          of memories you and your companions will treasure for a lifetime.
-        </p>
-        <p>
-          The beauty of our venue can only be seen to be completely believed.
-          From the forests to the lakes, book a visit and view Daejeon for
-          yourself.
-        </p>
-        <a href="">Continue</a>
+      <div id="introSectionTextContainer">
+        <h2 class="reveal revealBelow">Mountain Ceremony</h2>
+        <h3 class="reveal revealBelow">At our beautiful mountain venue</h3>
+        <span class="reveal growFromRight"></span
+        ><img class="reveal fadeIn" src="images\mountain.png" alt="logo" /><span
+          class="reveal growFromLeft"
+        ></span>
+        <div class="reveal revealBelow">
+          <p>Our Mountain Venue in the heart of Korea.</p>
+          <p>
+            A breath-taking venue just a short distance from Daejeon, the
+            mountains of Daejeon are among the most romantic and magical venues
+            in Korea. With acres of tranquil grounds, beautiful places, Korean
+            countryside, and impeccable facilities, our city is located in the
+            heart of Korea and makes for the most perfectly unique day.
+          </p>
+          <p>
+            Daejeon can host every part of your fairytale visit. From arrival to
+            the leaving and every moment in between, let us help you create a
+            day of memories you and your companions will treasure for a
+            lifetime.
+          </p>
+          <p>
+            The beauty of our venue can only be seen to be completely believed.
+            From the forests to the lakes, book a visit and view Daejeon for
+            yourself.
+          </p>
+          <a href="">Continue</a>
+        </div>
       </div>
     </section>
 
@@ -198,20 +204,6 @@
       </div>
     </section>
 
-    <!-- javascript for menu -->
-
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-        openbutton.style.opacity = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-        openbutton.style.opacity = "1";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
