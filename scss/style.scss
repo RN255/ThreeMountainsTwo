@@ -1,5 +1,6 @@
 @import "variables";
 @import "pageHeaders";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -30,10 +31,22 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  animation: fade-in 1s 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 
   img {
     /* border-radius: 50%; */
     width: 100px;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
@@ -55,7 +68,7 @@ nav {
   }
 }
 
-.nav-links ul li .nav-links ul li::after {
+.nav-links ul li::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -73,10 +86,14 @@ nav {
   width: 90%;
   color: $primary-text-color;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
   text-align: center;
+  animation: float-up 1s 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 
   h1 {
     font-size: 62px;
@@ -85,6 +102,17 @@ nav {
   p {
     font-size: 20px;
     margin: 10px 0 50px;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -111,6 +139,66 @@ nav {
 
 .nav-close {
   display: none;
+}
+
+// intro section
+
+#introSection {
+  height: 100vh;
+}
+
+#introSection div {
+  text-align: center;
+  max-width: 1000px;
+  padding: 50px;
+  margin: 10vh auto 0;
+}
+
+#introSection h2 {
+  font-weight: 300;
+  font-size: 70px;
+}
+
+#introSection h3 {
+  margin-top: 5vh;
+  font-weight: 300;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+#introSection div img {
+  height: 50px;
+}
+
+#introSection div span {
+  display: inline-block;
+  height: 20px;
+  width: 300px;
+  content: "";
+  border-top: 1px #777777 solid;
+  margin: 0 25px;
+}
+
+#introSection p {
+  margin-top: 3vh;
+  font-weight: 300;
+  color: #777777;
+  line-height: 2rem;
+}
+
+#introSection a {
+  display: block;
+  margin: 3vh auto 0;
+  border: 1px #777777 solid;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #777777;
+  width: fit-content;
+  transition: 0.25s;
+}
+
+#introSection a:hover {
+  background-color: #77777725;
 }
 
 /* start of main section  */

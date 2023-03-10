@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <link rel="stylesheet" href="scss/style.css" />
     <title>Three mountains in Daejeon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" href="images\mountainTabIcon.png" />
   </head>
   <body>
@@ -210,10 +209,8 @@
                 loc.textContent = data.name + "," + data.sys.country;
                 let icon1 = data.weather[0].icon;
                 icon.innerHTML = `<img src=http://openweathermap.org/img/wn/${icon1}@2x.png>`;
-                console.log('${icon1}');                
-      
+                console.log("${icon1}");
               });
-
           });
         }
       });
