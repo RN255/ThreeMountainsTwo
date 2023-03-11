@@ -544,6 +544,57 @@ nav img {
   transform: translateY(-20vh);
 }
 
+#secondBannerSection {
+  margin-top: 150px;
+  height: 100vh;
+  color: #ffffff;
+  background-image: url(../images/20171125_132142.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: right;
+}
+
+#secondBannerSection div {
+  margin: 0 10%;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#secondBannerSection div h3 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#secondBannerSection div p {
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+#secondBannerSection a {
+  display: block;
+  border: 1px #777777 solid;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #777777;
+  width: fit-content;
+  transition: 0.25s;
+  margin-top: 25px;
+  margin-right: 30px;
+  background-color: #bedaf7;
+  position: absolute;
+  right: 0;
+}
+
+#secondBannerSection a:hover {
+  background-color: rgba(119, 119, 119, 0.1450980392);
+}
+
 /* start of main section  */
 .course {
   width: 80%;
