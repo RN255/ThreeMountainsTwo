@@ -50,3 +50,147 @@ function reveal() {
     }
   }
 }
+
+// the carousel
+// the first carousel will not be used but will be stored here
+
+// // Select all slides
+// const slides = document.querySelectorAll(".slide");
+
+// // loop through slides and set each slides translateX property to index * 100%
+// slides.forEach((slide, indx) => {
+//   slide.style.transform = `translateX(${indx * 100}%)`;
+// });
+
+// // select next slide button
+// const nextSlide = document.querySelector(".btn-next");
+
+// // current slide counter
+// let curSlide = 0;
+// // maximum number of slides
+// let maxSlide = slides.length - 1;
+
+// // add event listener and navigation functionality
+// nextSlide.addEventListener("click", function () {
+//   // check if current slide is the last and reset current slide
+//   if (curSlide === maxSlide) {
+//     curSlide = 0;
+//   } else {
+//     curSlide++;
+//   }
+
+//   //   move slide by -100%
+//   slides.forEach((slide, indx) => {
+//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+//   });
+// });
+
+// // select prev slide button
+// const prevSlide = document.querySelector(".btn-prev");
+
+// // add event listener and navigation functionality
+// prevSlide.addEventListener("click", function () {
+//   // check if current slide is the first and reset current slide to last
+//   if (curSlide === 0) {
+//     curSlide = maxSlide;
+//   } else {
+//     curSlide--;
+//   }
+
+//   //   move slide by 100%
+//   slides.forEach((slide, indx) => {
+//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+//   });
+// });
+
+// the second carousel
+// the second carousel will not be used but will be stored here
+
+// let currentSlideTwo = 0;
+// let totalSlides = 2;
+// let maxSlidesTwoIndex = totalSlides - 1;
+// let imgSecond = document.getElementById("imgSecond");
+// // add event listener and navigation functionality
+// nextSlide.addEventListener("click", function () {
+//   imgSecond.style.opacity = "0";
+//   // check if current slide is the last and reset current slide
+//   if (currentSlideTwo === maxSlidesTwoIndex) {
+//     currentSlideTwo = 0;
+//   } else {
+//     currentSlideTwo++;
+//   }
+
+//   setTimeout(change, 500);
+
+//   function change() {
+//     if (currentSlideTwo == 0) {
+//       imgSecond.src = "images/20160521_050635.jpg";
+//       imgSecond.style.opacity = "1";
+//     } else if (currentSlideTwo == 1) {
+//       imgSecond.src = "images/20190623_164553.jpg";
+//       imgSecond.style.opacity = "1";
+//     }
+//   }
+// });
+
+// the third carousel
+
+let currentSlideThree = 0;
+let totalSlidesThree = 3;
+let maxSlidesThreeIndex = totalSlidesThree - 1;
+
+// get iamges
+let carouselImgOne = document.getElementById("carouselImgOne");
+let carouselImgTwo = document.getElementById("carouselImgTwo");
+let carouselImgThree = document.getElementById("carouselImgThree");
+
+// get markers
+let markerOne = document.getElementById("markerOne");
+let markerTwo = document.getElementById("markerTwo");
+let markerThree = document.getElementById("markerThree");
+
+// // select next slide button
+const nextSlide = document.querySelector(".btn-next");
+
+// add event listener and navigation functionality
+nextSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (currentSlideThree === maxSlidesThreeIndex) {
+    currentSlideThree = 0;
+  } else {
+    currentSlideThree++;
+  }
+
+  setTimeout(change, 0);
+
+  function change() {
+    if (currentSlideThree == 0) {
+      // change iamge opacity
+      carouselImgOne.style.opacity = "1";
+      carouselImgTwo.style.opacity = "0";
+      carouselImgThree.style.opacity = "0";
+      // change marker color
+      markerOne.style.backgroundColor = "white";
+      markerTwo.style.backgroundColor = "transparent";
+      markerThree.style.backgroundColor = "transparent";
+    } else if (currentSlideThree == 1) {
+      // change iamge opacity
+      carouselImgOne.style.opacity = "0";
+      carouselImgTwo.style.opacity = "1";
+      carouselImgThree.style.opacity = "0";
+      // change marker color
+      markerOne.style.backgroundColor = "transparent";
+      markerTwo.style.backgroundColor = "white";
+      markerThree.style.backgroundColor = "transparent";
+    } else if (currentSlideThree == 2) {
+      // change iamge opacity
+      carouselImgOne.style.opacity = "0";
+      carouselImgTwo.style.opacity = "0";
+      carouselImgThree.style.opacity = "1";
+      // change marker color
+      markerOne.style.backgroundColor = "transparent";
+      markerTwo.style.backgroundColor = "transparent";
+      markerThree.style.backgroundColor = "white";
+    }
+  }
+});

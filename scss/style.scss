@@ -920,6 +920,151 @@ form button:hover {
   background-color: #043e7d75;
 }
 
+// carousel
+
+// #carousel {
+//   width: 100%;
+//   height: 100vh;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// #carousel .slide {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   transition: 0.5s;
+// }
+
+// #carousel .slide img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// .carousel-btn {
+//   position: absolute;
+//   color: white;
+//   width: 25px;
+//   height: 25px;
+// }
+
+// .btn-prev {
+//   left: 2%;
+//   top: 45%;
+//   width: 25px;
+//   height: 25px;
+// }
+
+// .btn-next {
+//   right: 2%;
+//   top: 45%;
+//   width: 25px;
+//   height: 25px;
+// }
+
+// the second carousel
+
+// #theSecondCarousel {
+//   width: 100%;
+//   height: 100vh;
+//   position: relative;
+//   background-color: #000000;
+// }
+
+// #theSecondCarousel img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   transition: 1s;
+// }
+
+// the third carousel
+
+#carouselThree {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#carouselThree .slide3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#carouselThree .slide3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+#carouselThree .slide3 h3 {
+  position: absolute;
+}
+
+.carousel-btn {
+  position: absolute;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-prev {
+  left: 2%;
+  top: 45%;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-next {
+  right: 2%;
+  top: 45%;
+  width: 25px;
+  height: 25px;
+}
+
+#carouselImgOne {
+  opacity: 1;
+  transition: 1s;
+}
+
+#carouselImgTwo {
+  opacity: 0;
+}
+
+#carouselImgThree {
+  opacity: 0;
+}
+
+#carouselThree span {
+  position: absolute;
+  bottom: 2%;
+  width: 10px;
+  height: 10px;
+  border: 1px white solid;
+  transition: 1s;
+  transform: rotate(45deg);
+}
+
+#markerOne {
+  left: 45%;
+  background-color: white;
+}
+
+#markerTwo {
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
+}
+
+#markerThree {
+  right: 45%;
+  background-color: transparent;
+}
+
 /* start of main section  */
 
 .course {
