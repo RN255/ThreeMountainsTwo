@@ -595,7 +595,7 @@ nav img {
 }
 
 #bannerThreeBoxes {
-  height: 90vh;
+  height: 80vh;
   background-image: url("../images/20160119_151048.jpg");
   background-position: center;
   background-size: cover;
@@ -606,14 +606,17 @@ nav img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
-  padding: 0 8%;
+  width: 85%;
+  left: 0;
+  right: 0;
+  margin: auto;
   position: absolute;
   bottom: 10%;
 }
 
 #bannerThreeBoxes #bannerRow .bannerCol {
-  background-color: rgba(255, 255, 255, 0.768627451);
-  padding: 20% 10%;
+  background-color: rgba(255, 255, 255, 0.8784313725);
+  padding: 17% 7%;
   text-align: center;
 }
 
@@ -625,6 +628,171 @@ nav img {
 
 #bannerThreeBoxes #bannerRow .bannerCol p {
   font-weight: 300;
+}
+
+#mainPageFormSection {
+  height: 600px;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+}
+
+#mainPageFormSectionLeftCol {
+  width: 40%;
+  margin: 2%;
+  text-align: center;
+  background-color: #0d68ca;
+  color: #ffffff;
+}
+
+#mainPageFormSectionLeftCol div:first-of-type {
+  padding: 0 5%;
+}
+
+#mainPageFormSectionLeftCol h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 25% 0 10px;
+}
+
+#mainPageFormSectionLeftCol img {
+  height: 50px;
+}
+
+#mainPageFormSectionLeftCol span {
+  display: inline-block;
+  height: 20px;
+  width: 10%;
+  content: "";
+  border-top: 1px #000000 solid;
+  margin: 0 25px;
+}
+
+#mainPageFormSectionLeftCol h3 {
+  margin: 10px 0;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#mainPageFormSectionLeftCol p:first-of-type {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#mainPageFormSectionLeftCol span:nth-of-type(3) {
+  display: inline-block;
+  height: 0px;
+  width: 10%;
+  content: "";
+  border-top: 1px #000000 solid;
+  margin: 0 25px;
+}
+
+#mainPageFormSectionLeftCol p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+#mainPageFormSectionRightCol {
+  width: 60%;
+  background-color: #043e7d;
+  margin: 2%;
+}
+
+#mainPageFormSectionRightCol form {
+  width: 80%;
+  margin: 125px auto 0;
+}
+
+#mainPageFormSectionRightCol form input,
+select {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  border: none;
+  border-bottom: 1px #ffffff solid;
+  border-radius: 0;
+  background-color: #043e7d;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#mainPageFormSectionRightCol form input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+#mainPageFormSectionRightCol form div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+#firstName {
+  display: block;
+  width: 45%;
+}
+
+#lastName {
+  display: block;
+  width: 45%;
+}
+
+#email {
+  width: 100%;
+}
+
+#phone {
+  width: 100%;
+}
+
+#howFind {
+  width: 100%;
+}
+
+#howFind option {
+  background-color: #043e7d;
+}
+
+#checkboxContainer {
+  display: flex;
+  position: relative;
+}
+
+#checkbox {
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
+#checkboxLabel {
+  display: block;
+  font-size: 14px;
+  display: inline;
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  margin: 0;
+  color: #ffffff;
+}
+
+form button {
+  display: block;
+  border: #ffffff 1px solid;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  transition: 0.25s;
+}
+
+form button:hover {
+  background-color: rgba(119, 119, 119, 0.1450980392);
 }
 
 /* start of main section  */
