@@ -795,6 +795,83 @@ form button:hover {
   background-color: rgba(119, 119, 119, 0.1450980392);
 }
 
+#blog {
+  padding: 50px 0;
+}
+
+#blog h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+#blogRow {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blogCol {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#blogRow img {
+  width: 100%;
+}
+
+#blogRow h3 {
+  font-size: 24px;
+  padding: 25px 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#blogRow span {
+  display: inline-block;
+  height: 20px;
+  width: 33%;
+  content: "";
+  border-top: 1px rgba(0, 0, 0, 0.1450980392) solid;
+  margin: 0 25px;
+}
+
+#blog .blogCol p:first-of-type {
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 25px;
+}
+
+#blogRow .blogCol p:nth-of-type(2) {
+  font-size: 16px;
+  color: #000000;
+  padding: 10px 25px 100px;
+  line-height: 1.5rem;
+}
+
+#blogRow a {
+  background-color: #043e7d;
+  display: block;
+  border: #ffffff 1px solid;
+  padding: 15px 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 10px 25px;
+  transition: 0.25s;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+}
+
+#blogRow a:hover {
+  background-color: rgba(4, 62, 125, 0.4588235294);
+}
+
 /* start of main section  */
 .course {
   width: 80%;
