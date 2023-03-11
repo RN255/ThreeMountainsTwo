@@ -354,31 +354,31 @@ nav {
 
 // firstTextAndImage
 
-#firstTextAndImage {
+.rightImageText {
   height: 100vh;
   display: flex;
   width: 90%;
   margin: auto;
 }
 
-#firstTextAndImage div:nth-child(1) {
+.rightImageText div:nth-child(1) {
   width: 45%;
   margin: auto;
 }
 
-#firstTextAndImage h3 {
+.rightImageText h3 {
   padding-right: 10vw;
   font-size: 40px;
   font-weight: 400;
 }
 
-#firstTextAndImage h4 {
+.rightImageText h4 {
   padding-right: 10vw;
   font-size: 20px;
   font-weight: 300;
 }
 
-#firstTextAndImage p {
+.rightImageText p {
   padding-right: 10vw;
   margin-top: 30px;
   font-size: 16px;
@@ -386,7 +386,7 @@ nav {
   line-height: 2rem;
 }
 
-#firstTextAndImage a {
+.rightImageText a {
   display: block;
   border: 1px #777777 solid;
   padding: 10px 20px;
@@ -397,16 +397,16 @@ nav {
   margin-top: 25px;
 }
 
-#firstTextAndImage a:hover {
+.rightImageText a:hover {
   background-color: #77777725;
 }
 
-#firstTextAndImage div:nth-child(2) {
+.rightImageText div:nth-child(2) {
   width: 55%;
   padding: 15vh 0;
 }
 
-#firstTextAndImage img {
+.rightImageText img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -414,31 +414,31 @@ nav {
 
 // secondTextAndImage
 
-#secondTextAndImage {
+.leftImageText {
   height: 100vh;
   display: flex;
   width: 90%;
   margin: auto;
 }
 
-#secondTextAndImage div:nth-child(1) {
+.leftImageText div:nth-child(1) {
   width: 55%;
   padding: 15vh 0;
 }
 
-#secondTextAndImage h3 {
+.leftImageText h3 {
   padding-left: 10vw;
   font-size: 40px;
   font-weight: 400;
 }
 
-#secondTextAndImage h4 {
+.leftImageText h4 {
   padding-left: 10vw;
   font-size: 20px;
   font-weight: 300;
 }
 
-#secondTextAndImage p {
+.leftImageText p {
   padding-left: 10vw;
   margin-top: 30px;
   font-size: 16px;
@@ -446,7 +446,7 @@ nav {
   line-height: 2rem;
 }
 
-#secondTextAndImage a {
+.leftImageText a {
   display: block;
   border: 1px #777777 solid;
   padding: 10px 20px;
@@ -458,16 +458,16 @@ nav {
   margin-left: 10vw;
 }
 
-#secondTextAndImage a:hover {
+.leftImageText a:hover {
   background-color: #77777725;
 }
 
-#secondTextAndImage div:nth-child(2) {
+.leftImageText div:nth-child(2) {
   width: 45%;
   margin: auto;
 }
 
-#secondTextAndImage img {
+.leftImageText img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -578,7 +578,7 @@ nav {
   margin-top: 150px;
   height: 100vh;
   color: #ffffff;
-  background-image: url(../images/20171125_132142.jpg);
+  background-image: url(../images/20190623_165340.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -620,7 +620,7 @@ nav {
   width: fit-content;
   transition: 0.25s;
   margin-top: 25px;
-  margin-right: 30px;
+  // margin-right: 30px;
   background-color: #bedaf7;
   position: absolute;
   right: 0;
@@ -628,6 +628,42 @@ nav {
 
 #secondBannerSection a:hover {
   background-color: #77777725;
+}
+
+// banner with three boxes
+
+#bannerThreeBoxes {
+  height: 90vh;
+  background-image: url("../images/20160119_151048.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#bannerThreeBoxes #bannerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 0 8%;
+  position: absolute;
+  bottom: 10%;
+}
+
+#bannerThreeBoxes #bannerRow .bannerCol {
+  background-color: #ffffffc4;
+  // width: 25%;
+  padding: 20% 10%;
+  text-align: center;
+}
+
+#bannerThreeBoxes #bannerRow .bannerCol h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#bannerThreeBoxes #bannerRow .bannerCol p {
+  font-weight: 300;
 }
 
 /* start of main section  */
