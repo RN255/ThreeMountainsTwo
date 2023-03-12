@@ -151,8 +151,9 @@ let markerThree = document.getElementById("markerThree");
 
 // // select next slide button
 const nextSlide = document.querySelector(".btn-next");
+const prevSlide = document.querySelector(".btn-prev");
 
-// add event listener and navigation functionality
+// change to next slide
 nextSlide.addEventListener("click", function () {
   // check if current slide is the last and reset current slide
   if (currentSlideThree === maxSlidesThreeIndex) {
@@ -162,35 +163,48 @@ nextSlide.addEventListener("click", function () {
   }
 
   setTimeout(change, 0);
-
-  function change() {
-    if (currentSlideThree == 0) {
-      // change iamge opacity
-      carouselImgOne.style.opacity = "1";
-      carouselImgTwo.style.opacity = "0";
-      carouselImgThree.style.opacity = "0";
-      // change marker color
-      markerOne.style.backgroundColor = "white";
-      markerTwo.style.backgroundColor = "transparent";
-      markerThree.style.backgroundColor = "transparent";
-    } else if (currentSlideThree == 1) {
-      // change iamge opacity
-      carouselImgOne.style.opacity = "0";
-      carouselImgTwo.style.opacity = "1";
-      carouselImgThree.style.opacity = "0";
-      // change marker color
-      markerOne.style.backgroundColor = "transparent";
-      markerTwo.style.backgroundColor = "white";
-      markerThree.style.backgroundColor = "transparent";
-    } else if (currentSlideThree == 2) {
-      // change iamge opacity
-      carouselImgOne.style.opacity = "0";
-      carouselImgTwo.style.opacity = "0";
-      carouselImgThree.style.opacity = "1";
-      // change marker color
-      markerOne.style.backgroundColor = "transparent";
-      markerTwo.style.backgroundColor = "transparent";
-      markerThree.style.backgroundColor = "white";
-    }
-  }
 });
+
+// change to prev slide
+prevSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (currentSlideThree === 0) {
+    currentSlideThree = maxSlidesThreeIndex;
+  } else {
+    currentSlideThree--;
+  }
+
+  setTimeout(change, 0);
+});
+
+// change the slide
+function change() {
+  if (currentSlideThree == 0) {
+    // change iamge opacity
+    carouselImgOne.style.opacity = "1";
+    carouselImgTwo.style.opacity = "0";
+    carouselImgThree.style.opacity = "0";
+    // change marker color
+    markerOne.style.backgroundColor = "white";
+    markerTwo.style.backgroundColor = "transparent";
+    markerThree.style.backgroundColor = "transparent";
+  } else if (currentSlideThree == 1) {
+    // change iamge opacity
+    carouselImgOne.style.opacity = "0";
+    carouselImgTwo.style.opacity = "1";
+    carouselImgThree.style.opacity = "0";
+    // change marker color
+    markerOne.style.backgroundColor = "transparent";
+    markerTwo.style.backgroundColor = "white";
+    markerThree.style.backgroundColor = "transparent";
+  } else if (currentSlideThree == 2) {
+    // change iamge opacity
+    carouselImgOne.style.opacity = "0";
+    carouselImgTwo.style.opacity = "0";
+    carouselImgThree.style.opacity = "1";
+    // change marker color
+    markerOne.style.backgroundColor = "transparent";
+    markerTwo.style.backgroundColor = "transparent";
+    markerThree.style.backgroundColor = "white";
+  }
+}

@@ -889,31 +889,58 @@ form button:hover {
   height: 100%;
   object-fit: cover;
   transition: 1s;
+  filter: brightness(85%);
 }
 
 #carouselThree .slide3 h3 {
   position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #ffffff;
+  z-index: 10;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#carouselThree .slide3 p {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #ffffff;
+  z-index: 10;
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
 .carousel-btn {
   position: absolute;
-  color: white;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-prev {
   left: 2%;
   top: 45%;
-  width: 25px;
-  height: 25px;
+  background-image: url(../images/icons8-back-50.png);
 }
 
 .btn-next {
   right: 2%;
   top: 45%;
-  width: 25px;
-  height: 25px;
+  background-image: url(../images/icons8-forward-50.png);
 }
 
 #carouselImgOne {
@@ -923,10 +950,12 @@ form button:hover {
 
 #carouselImgTwo {
   opacity: 0;
+  transition: 1s;
 }
 
 #carouselImgThree {
   opacity: 0;
+  transition: 1s;
 }
 
 #carouselThree span {
