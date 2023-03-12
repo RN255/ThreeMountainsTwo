@@ -390,10 +390,34 @@ nav img {
 
 .rightImageText img {
   height: 100%;
-  width: 100%;
+  width: 0%;
   object-fit: cover;
+  object-position: left;
 }
 
+.rightImageText .revealBelow {
+  opacity: 0;
+}
+
+.rightImageText .activeBelow {
+  animation: revealFromBelow 1s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
+.rightImageText .activeImgGrowFromLeft {
+  animation: imgGrowFromLeft 1s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imgGrowFromLeft {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .leftImageText {
   height: 100vh;
   display: flex;
@@ -449,8 +473,24 @@ nav img {
 
 .leftImageText img {
   height: 100%;
-  width: 100%;
+  width: 0%;
   object-fit: cover;
+  object-position: left;
+}
+
+.leftImageText .revealBelow {
+  opacity: 0;
+}
+
+.leftImageText .activeBelow {
+  animation: revealFromBelow 1s 0.5s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
+.leftImageText .activeImgGrowFromLeft {
+  animation: imgGrowFromLeft 1s 0s;
+  animation-fill-mode: forwards;
 }
 
 /* photo grid  */

@@ -411,9 +411,60 @@ nav {
 
 .rightImageText img {
   height: 100%;
-  width: 100%;
+  width: 0%;
   object-fit: cover;
+  object-position: left;
 }
+
+// reveal from Below
+
+.rightImageText .revealBelow {
+  opacity: 0;
+}
+
+.rightImageText .activeBelow {
+  animation: revealFromBelow 1s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
+// @keyframes revealFromBelow {
+//   0% {
+//     transform: translateY(75px);
+//     opacity: 0;
+//   }
+
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// grow from right to left
+
+.rightImageText .imgGrowFromLeft {
+  // transform: scaleX(0);
+}
+
+.rightImageText .activeImgGrowFromLeft {
+  animation: imgGrowFromLeft 1s 0.5s;
+  // transform-origin: left;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imgGrowFromLeft {
+  0% {
+    // transform: scaleX(0);
+    width: 0%;
+  }
+
+  100% {
+    // transform: scaleX(1);
+    width: 100%;
+  }
+}
+
+
 
 // secondTextAndImage
 
@@ -472,9 +523,46 @@ nav {
 
 .leftImageText img {
   height: 100%;
-  width: 100%;
+  width: 0%;
   object-fit: cover;
+  object-position: left;
 }
+
+// reveal from Below
+
+.leftImageText .revealBelow {
+  opacity: 0;
+}
+
+.leftImageText .activeBelow {
+  animation: revealFromBelow 1s 0.5s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
+// grow from right to left
+
+.leftImageText .imgGrowFromLeft {
+  // transform: scaleX(0);
+}
+
+.leftImageText .activeImgGrowFromLeft {
+  animation: imgGrowFromLeft 1s 0s;
+  // transform-origin: left;
+  animation-fill-mode: forwards;
+}
+
+// @keyframes imgGrowFromLeft {
+//   0% {
+//     // transform: scaleX(0);
+//     width: 0%;
+//   }
+
+//   100% {
+//     // transform: scaleX(1);
+//     width: 100%;
+//   }
+// }
 
 /* photo grid  */
 

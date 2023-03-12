@@ -47,6 +47,11 @@ function reveal() {
       itemsToReveal[i].classList.contains("fadeIn")
     ) {
       itemsToReveal[i].classList.add("activeFadeIn");
+    } else if (
+      revealtop < windowheight - revealpoint &&
+      itemsToReveal[i].classList.contains("imgGrowFromLeft")
+    ) {
+      itemsToReveal[i].classList.add("activeImgGrowFromLeft");
     }
   }
 }
