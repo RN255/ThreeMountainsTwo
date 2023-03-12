@@ -998,8 +998,7 @@ form button:hover {
   height: 100%;
   object-fit: cover;
   transition: 1s;
-  filter: brightness(85%)
-
+  filter: brightness(85%);
 }
 
 #carouselThree .slide3 h3 {
@@ -1093,6 +1092,56 @@ form button:hover {
 #markerThree {
   right: 45%;
   background-color: transparent;
+}
+
+// instaCarousel
+
+#instaCarouselSection {
+  margin: 150px 0;
+}
+
+#instaCarouselSection div:first-of-type {
+  text-align: center;
+  text-decoration: none;
+}
+
+#instaCarouselSection div:first-of-type a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#instaCarouselSection div:first-of-type h3 {
+  margin: 25px 0 10px;
+  font-weight: 400;
+  padding: 0;
+}
+
+#instaCarouselSection div:first-of-type h2 {
+  margin: 10px 0 40px;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 0;
+}
+
+#instaCarouselSection div:first-of-type img {
+  height: 35px;
+}
+
+#instaCarousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#instaCarousel a {
+  width: 100%;
+  height: 100%;
+}
+
+#instaCarousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* start of main section  */
