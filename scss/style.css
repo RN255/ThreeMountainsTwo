@@ -1187,6 +1187,7 @@ form button:hover {
 #copywriteInfo a {
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
 /* page one style */
@@ -1469,6 +1470,12 @@ form #submitButton:hover {
   #introSection h2 {
     font-size: 30px;
   }
+  #introSectionTextContainer {
+    text-align: center;
+    max-width: 90%;
+    padding: 50px 5%;
+    margin: 0 auto;
+  }
   #firstBannerSection div {
     background-color: #ffffff;
     position: absolute;
@@ -1490,14 +1497,236 @@ form #submitButton:hover {
     color: #777777;
   }
   .rightImageText {
-    height: 100vh;
+    height: fit-content;
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    margin: 10% 0 5%;
+  }
+  .rightImageText div:nth-child(1) {
+    width: 90%;
+    padding: 0 5%;
+    margin: auto;
+    text-align: center;
+  }
+  .rightImageText h3 {
+    padding-right: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #043e7d;
+  }
+  .rightImageText h4 {
+    padding-right: 0;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .rightImageText p {
+    padding-right: 0;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .rightImageText a {
+    display: block;
+    border: 1px #777777 solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #777777;
+    width: fit-content;
+    margin: auto;
+    transition: 0.25s;
+    margin-top: 25px;
   }
   .rightImageText div:nth-child(2) {
     width: 100%;
+    height: 50vh;
     padding: 15vh 0;
+  }
+  .leftImageText {
+    height: fit-content;
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin: 5% 0 70vh;
+    position: relative;
+  }
+  .leftImageText div:nth-child(1) {
+    width: 100%;
+    height: 50vh;
+    padding: 15vh 0;
+    position: absolute;
+    bottom: -70vh;
+  }
+  .leftImageText h3 {
+    padding-left: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #043e7d;
+  }
+  .leftImageText h4 {
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .leftImageText p {
+    padding-left: 0;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .leftImageText a {
+    display: block;
+    border: 1px #777777 solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #777777;
+    width: fit-content;
+    margin: auto;
+    transition: 0.25s;
+    margin-top: 25px;
+  }
+  .leftImageText div:nth-child(2) {
+    width: 90%;
+    padding: 0 5%;
+    margin: auto;
+    text-align: center;
+  }
+  /* photo grid  */
+  #photoGrid {
+    margin: 100px 0;
+    width: 100vw;
+    padding: 50px 0;
+    height: fit-content;
+    background: linear-gradient(to right, #bedaf7 60%, transparent 40%);
+  }
+  #photoGrid h2 {
+    font-size: 40px;
+    margin-left: 5vw;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  #rowOne {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  #rowOne > div {
+    padding: 5px;
+  }
+  #rowOne img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+  }
+  #rowOne div:nth-child(1) {
+    height: 30vh;
+    width: calc(90vw - 10px);
+  }
+  #rowOne div:nth-child(2) {
+    height: 30vh;
+    width: calc(45vw - 10px);
+  }
+  #rowOne div:nth-child(3) {
+    height: 30vh;
+    width: calc(45vw - 10px);
+  }
+  #rowOne div:nth-child(4) {
+    height: 30vh;
+    width: calc(45vw - 10px);
+    display: none;
+  }
+  #rowTwo {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  #rowTwo > div {
+    padding: 5px;
+  }
+  #rowTwo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+  }
+  #rowTwo div:nth-child(1) {
+    height: 30vh;
+    width: calc(45vw - 10px);
+    transform: translateY(0vh);
+  }
+  #rowTwo div:nth-child(2) {
+    height: 30vh;
+    width: calc(45vw - 10px);
+  }
+  #rowTwo div:nth-child(3) {
+    height: 30vh;
+    width: calc(90vw - 10px);
+  }
+  #rowTwo div:nth-child(4) {
+    height: 50vh;
+    width: calc(38vw - 10px);
+    transform: translateY(0vh);
+    display: none;
+  }
+  #secondBannerSection {
+    margin-top: 150px;
+    height: 100vh;
+    color: #ffffff;
+    background-image: url(../images/20190623_165340.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: right;
+  }
+  #secondBannerSection div {
+    margin: 0 10%;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  #secondBannerSection div h3 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  #secondBannerSection div h4 {
+    color: #000000;
+  }
+  #secondBannerSection div p {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+  #secondBannerSection a {
+    display: block;
+    border: 1px #ffffff solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    width: fit-content;
+    transition: 0.25s;
+    margin: 25px auto 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+  #secondBannerSection a:hover {
+    background-color: rgba(119, 119, 119, 0.1450980392);
+  }
+  #bannerThreeBoxes {
+    height: fit-content;
+    background-image: url("../images/20160119_151048.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
   }
   #bannerThreeBoxes #bannerRow {
     display: block;
@@ -1507,28 +1736,43 @@ form #submitButton:hover {
     left: 0;
     right: 0;
     margin: auto;
-    position: absolute;
+    position: relative;
     bottom: 10%;
+    padding: 10% 0;
   }
-  .leftImageText {
-    height: 100vh;
-    display: block;
-    width: 90%;
-    margin: auto;
-  }
-  .leftImageText div:nth-child(1) {
-    width: 100%;
-    padding: 15vh 0;
-  }
-  .leftImageText div:nth-child(2) {
-    width: 100%;
-    margin: auto;
+  #bannerThreeBoxes #bannerRow .bannerCol {
+    background-color: rgba(255, 255, 255, 0.8784313725);
+    padding: 17% 7%;
+    text-align: center;
+    margin-top: 10%;
   }
   #mainPageFormSection {
-    height: 600px;
+    height: fit-content;
     display: block;
     width: 90vw;
     margin: auto;
+  }
+  #mainPageFormSectionLeftCol {
+    width: 96%;
+    margin: 2%;
+    padding: 10% 0;
+    text-align: center;
+    background-color: #0d68ca;
+    color: #ffffff;
+  }
+  #mainPageFormSectionLeftCol div:first-of-type {
+    padding: 0 5%;
+    margin: 0;
+  }
+  #mainPageFormSectionRightCol {
+    width: 96%;
+    background-color: #043e7d;
+    margin: 2%;
+  }
+  #mainPageFormSectionRightCol form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10% 0;
   }
   #blogRow {
     width: 90vw;
@@ -1536,9 +1780,54 @@ form #submitButton:hover {
     display: block;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .blogCol {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #blogRow h3 {
+    font-size: 24px;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #043e7d;
+  }
+  #blogRow span {
+    display: inline-block;
+    height: 20px;
+    width: 33%;
+    content: "";
+    border-top: 1px rgba(0, 0, 0, 0.1450980392) solid;
+    margin: 0;
+  }
+  #blog .blogCol p:first-of-type {
+    font-size: 18px;
+    color: #000000;
+    padding: 10px 0;
+  }
+  #blogRow .blogCol p:nth-of-type(2) {
+    font-size: 16px;
+    color: #000000;
+    padding: 10px 0 100px;
+    line-height: 1.5rem;
+  }
+  #blogRow a {
+    background-color: #043e7d;
+    display: block;
+    border: #ffffff 1px solid;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 10px 0;
+    transition: 0.25s;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+  }
   #carouselThree .slide3 h3 {
     position: absolute;
-    top: 35%;
+    top: 27%;
     text-align: center;
     width: 60%;
     left: 0;
@@ -1552,7 +1841,7 @@ form #submitButton:hover {
   }
   #carouselThree .slide3 p {
     position: absolute;
-    top: 45%;
+    top: 35%;
     text-align: center;
     width: 60%;
     left: 0;
@@ -1564,9 +1853,29 @@ form #submitButton:hover {
     line-height: 2rem;
     font-weight: 300;
   }
-  .rightImageText div:nth-child(1) {
-    width: 100%;
-    margin: auto;
+  .btn-prev {
+    left: 1%;
+    top: 45%;
+    background-image: url(../images/icons8-back-50.png);
+  }
+  .btn-next {
+    right: 1%;
+    top: 45%;
+    background-image: url(../images/icons8-forward-50.png);
+  }
+  #markerOne {
+    left: 40%;
+    background-color: white;
+  }
+  #markerThree {
+    right: 40%;
+    background-color: transparent;
+  }
+  #instaCarousel {
+    display: block;
+  }
+  #copywriteInfo a {
+    display: block;
   }
   .row {
     flex-direction: column;
