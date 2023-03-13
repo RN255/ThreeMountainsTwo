@@ -168,12 +168,12 @@ nav img {
 #introSection h2 {
   font-weight: 300;
   font-size: 70px;
+  color: #043e7d;
 }
 
 #introSection h3 {
   margin: 5vh 0;
   font-weight: 300;
-  color: #777777;
   text-transform: uppercase;
 }
 
@@ -193,17 +193,16 @@ nav img {
 #introSection p {
   margin-top: 3vh;
   font-weight: 300;
-  color: #777777;
   line-height: 2rem;
 }
 
 #introSection a {
   display: block;
   margin: 3vh auto 0;
-  border: 1px #777777 solid;
+  border: 1px #000000 solid;
   padding: 10px 20px;
+  color: #000000;
   text-decoration: none;
-  color: #777777;
   width: fit-content;
   transition: 0.25s;
 }
@@ -324,9 +323,10 @@ nav img {
   padding: 30px;
 }
 
-#firstBannerSection div h3 {
+#firstBannerSection div h2 {
   font-size: 40px;
   font-weight: 300;
+  color: #043e7d;
 }
 
 #firstBannerSection div p {
@@ -351,6 +351,7 @@ nav img {
   padding-right: 10vw;
   font-size: 40px;
   font-weight: 400;
+  color: #043e7d;
 }
 
 .rightImageText h4 {
@@ -433,6 +434,7 @@ nav img {
   padding-left: 10vw;
   font-size: 40px;
   font-weight: 400;
+  color: #043e7d;
 }
 
 .leftImageText h4 {
@@ -676,6 +678,7 @@ nav img {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 16px;
+  color: #043e7d;
 }
 
 #bannerThreeBoxes #bannerRow .bannerCol p {
@@ -888,6 +891,7 @@ form button:hover {
   font-size: 34px;
   font-weight: 400;
   margin-bottom: 50px;
+  color: #043e7d;
 }
 
 #blogRow {
@@ -914,6 +918,7 @@ form button:hover {
   padding: 25px 25px;
   text-transform: uppercase;
   font-weight: 400;
+  color: #043e7d;
 }
 
 #blogRow span {
@@ -1095,6 +1100,7 @@ form button:hover {
   font-weight: 500;
   font-size: 30px;
   padding: 0;
+  color: #043e7d;
 }
 
 #instaCarouselSection div:first-of-type img {
