@@ -656,6 +656,16 @@ nav img {
   bottom: 10%;
 }
 
+#bannerThreeBoxes .revealBelow {
+  opacity: 0;
+}
+
+#bannerThreeBoxes .activeBelow {
+  animation: revealFromBelow 0.5s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
 #bannerThreeBoxes #bannerRow .bannerCol {
   background-color: rgba(255, 255, 255, 0.8784313725);
   padding: 17% 7%;
@@ -685,6 +695,16 @@ nav img {
   text-align: center;
   background-color: #0d68ca;
   color: #ffffff;
+}
+
+#mainPageFormSection .revealBelow {
+  opacity: 0;
+}
+
+#mainPageFormSection .activeBelow {
+  animation: revealFromBelow 1s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
 }
 
 #mainPageFormSectionLeftCol div:first-of-type {
@@ -841,6 +861,26 @@ form button:hover {
   padding: 50px 0;
 }
 
+#blog .revealBelow {
+  opacity: 0;
+}
+
+#blog .activeBelow {
+  animation: revealFromBelow 1s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
+#blogRow .revealBelow {
+  opacity: 0;
+}
+
+#blogRow .activeBelow {
+  animation: revealFromBelow 1s 0s;
+  transform: translateY(75px);
+  animation-fill-mode: forwards;
+}
+
 #blog h2 {
   text-align: center;
   text-transform: uppercase;
@@ -864,6 +904,8 @@ form button:hover {
 
 #blogRow img {
   width: 100%;
+  height: 35%;
+  object-fit: cover;
 }
 
 #blogRow h3 {
