@@ -10,6 +10,19 @@ function hideMenu() {
   openbutton.style.opacity = "1";
 }
 
+// reveal scroll up button when scrolling away from top
+window.onscroll = function () {
+  revealUpButton();
+};
+
+function revealUpButton() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("returnToTopButton").style["display"] = "block";
+  } else {
+    document.getElementById("returnToTopButton").style["display"] = "none";
+  }
+}
+
 // reveal certain elements on scroll
 
 window.addEventListener("scroll", reveal);

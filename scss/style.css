@@ -1390,6 +1390,24 @@ form #submitButton:hover {
   cursor: pointer;
 }
 
+#returnToTopButton {
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  background-color: rgba(255, 255, 255, 0.5647058824);
+  display: none;
+}
+
+#returnToTopButton a {
+  display: block;
+  width: 25px;
+  padding: 10px;
+}
+
+#returnToTopButton img {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .text-box h1 {
     font-size: 20px;
