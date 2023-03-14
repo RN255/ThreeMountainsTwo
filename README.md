@@ -24,7 +24,8 @@ This was one of the first websites I created so I choose a topic I was familiar 
 - social media link section
 - weather API for the current weather in Daejeon
 - Uses Sass to style the pages 
-    - primary color can be changed and text color will change automatically if background color is changed
+    - primary color can be changed and text color will change automatically if background color is changed 
+- Much of the page was styled on the following page: https://rowtoncastle.com/
 
 ## Lessons learnt
 - I was familiar with many of the concepts having studied them but this was one of my first attempts at putting them into a functioning site.
