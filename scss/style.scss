@@ -1471,16 +1471,19 @@ form button:hover {
   }
 
   p {
-    color: #ffffff;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.5rem;
     margin: 0px 0;
-    text-decoration: none;
   }
 
   #contactHolder {
     margin: 20px 0;
+
+    p {
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
 }
 

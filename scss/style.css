@@ -1156,15 +1156,17 @@ form button:hover {
   height: 50px;
 }
 #footer p {
-  color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.5rem;
   margin: 0px 0;
-  text-decoration: none;
 }
 #footer #contactHolder {
   margin: 20px 0;
+}
+#footer #contactHolder p {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #SMicons {
