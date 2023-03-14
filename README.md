@@ -35,4 +35,3 @@ This was one of the first websites I created so I choose a topic I was familiar 
 ## Future development
 - the layout of the main page could be changed to make it more interesting, the rectangles look a bit boring.
 - more information for each mountain
-- more mountains or locations could be added
