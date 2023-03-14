@@ -1,9 +1,6 @@
 ## Project Name: Three Mountains in Daejeon
 This is a website that gives an overview of three mountains in Daejeon, South Korea. There is a brief description, a photo gallery and a map for each mountain.
 
->**Warning**  
->This site is under re-construction - some features may not work properly
-
 ## How to use
 Website is live at: https://rn255.github.io/ThreeMountainsTwo
 
