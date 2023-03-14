@@ -783,7 +783,7 @@ nav {
   display: flex;
   // background-color: #70afe950;
   width: 90vw;
-  margin: auto;
+  margin: 100px auto 0;
 }
 
 #mainPageFormSectionLeftCol {
@@ -961,6 +961,7 @@ form button:hover {
 #blog {
   // background-color: #0d68ca;
   padding: 50px 0;
+  margin-top: 50px;
 }
 
 #blog .revealBelow {
@@ -1124,6 +1125,7 @@ form button:hover {
 // the third carousel
 
 #carouselThree {
+  margin-top: 100px;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -1277,8 +1279,10 @@ form button:hover {
 }
 
 #instaCarousel a {
+  display: block;
   width: 100%;
   height: 100%;
+  font-size: 0;
 }
 
 #instaCarousel img {
@@ -1856,8 +1860,7 @@ form #submitButton:hover {
     height: fit-content;
     display: block;
     width: 100%;
-    margin: auto;
-    margin: 10% 0 5%;
+    margin: 20% 0 5%;
   }
 
   .rightImageText div:nth-child(1) {
@@ -2176,7 +2179,7 @@ form #submitButton:hover {
     display: block;
     // background-color: #70afe950;
     width: 90vw;
-    margin: auto;
+    margin: 100px auto 0;
   }
 
   #mainPageFormSectionLeftCol {
@@ -2216,7 +2219,7 @@ form #submitButton:hover {
 
   .blogCol {
     width: 90%;
-    margin: 0 auto;
+    margin: 15% auto;
     position: relative;
     // background-color: #043e7d;
   }
@@ -2318,7 +2321,7 @@ form #submitButton:hover {
     right: 40%;
     background-color: transparent;
   }
-  
+
   // instaCarousel
 
   #instaCarousel {
