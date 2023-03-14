@@ -13,7 +13,6 @@
 
 body {
   background-color: $primary-background-color;
-  width: 100vw;
 }
 
 html {
@@ -572,10 +571,11 @@ nav {
 
 #photoGrid {
   // width: 90vw;
-  margin: 150px 5vw 0 0vw;
+  margin: 150px 0 0;
   padding: 50px 0;
   height: 95vh;
-  background: linear-gradient(to right, #bedaf7 50%, transparent 50%);
+  // background: linear-gradient(to right, #bedaf7 50%, transparent 50%);
+  background-color: #043e7d;
 }
 
 #photoGrid h2 {
@@ -591,6 +591,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: calc(5vw - 5px);
+  margin-right: calc(5vw - 5px);
 }
 
 #rowOne > div {
@@ -603,7 +604,6 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 5px;
 }
 
 #rowOne div:nth-child(1) {
@@ -630,6 +630,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: calc(5vw - 5px);
+  margin-right: calc(5vw - 5px);
 }
 
 #rowTwo > div {
@@ -642,7 +643,6 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 5px;
 }
 
 #rowTwo div:nth-child(1) {
@@ -1974,11 +1974,12 @@ form #submitButton:hover {
   #photoGrid {
     // width: 90vw;
     margin: 100px 0;
-    width: 100vw;
+    // width: 100vw;
     padding: 50px 0;
     // height: 95vh;
     height: fit-content;
-    background: linear-gradient(to right, #bedaf7 60%, transparent 40%);
+    // background: linear-gradient(to right, #bedaf7 60%, transparent 40%);
+    background-color: #043e7d;
   }
 
   #photoGrid h2 {
@@ -1991,15 +1992,14 @@ form #submitButton:hover {
   }
 
   #rowOne {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
-    // margin-left: calc(5vw - 5px);
+    margin-left: calc(5vw - 10px);
+    margin-right: calc(5vw - 10px);
   }
 
   #rowOne > div {
     // position: relative;
-    padding: 5px;
   }
 
   #rowOne img {
@@ -2007,7 +2007,6 @@ form #submitButton:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 5px;
   }
 
   #rowOne div:nth-child(1) {
@@ -2033,11 +2032,13 @@ form #submitButton:hover {
   }
 
   #rowTwo {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
     // margin-left: calc(5vw - 5px);
+    margin-left: calc(5vw - 10px);
+    margin-right: calc(5vw - 10px);
   }
 
   #rowTwo > div {
@@ -2050,7 +2051,6 @@ form #submitButton:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 5px;
   }
 
   #rowTwo div:nth-child(1) {

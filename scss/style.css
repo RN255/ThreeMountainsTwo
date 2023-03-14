@@ -29,7 +29,6 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  width: 100vw;
 }
 
 html {
@@ -497,10 +496,10 @@ nav img {
 
 /* photo grid  */
 #photoGrid {
-  margin: 150px 5vw 0 0vw;
+  margin: 150px 0 0;
   padding: 50px 0;
   height: 95vh;
-  background: linear-gradient(to right, #bedaf7 50%, transparent 50%);
+  background-color: #043e7d;
 }
 
 #photoGrid h2 {
@@ -516,6 +515,7 @@ nav img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: calc(5vw - 5px);
+  margin-right: calc(5vw - 5px);
 }
 
 #rowOne > div {
@@ -526,7 +526,6 @@ nav img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 5px;
 }
 
 #rowOne div:nth-child(1) {
@@ -553,6 +552,7 @@ nav img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: calc(5vw - 5px);
+  margin-right: calc(5vw - 5px);
 }
 
 #rowTwo > div {
@@ -563,7 +563,6 @@ nav img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 5px;
 }
 
 #rowTwo div:nth-child(1) {
@@ -1600,10 +1599,9 @@ form #submitButton:hover {
   /* photo grid  */
   #photoGrid {
     margin: 100px 0;
-    width: 100vw;
     padding: 50px 0;
     height: fit-content;
-    background: linear-gradient(to right, #bedaf7 60%, transparent 40%);
+    background-color: #043e7d;
   }
   #photoGrid h2 {
     font-size: 40px;
@@ -1614,17 +1612,15 @@ form #submitButton:hover {
     font-weight: 300;
   }
   #rowOne {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-  }
-  #rowOne > div {
-    padding: 5px;
+    margin-left: calc(5vw - 10px);
+    margin-right: calc(5vw - 10px);
   }
   #rowOne img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 5px;
   }
   #rowOne div:nth-child(1) {
     height: 30vh;
@@ -1644,8 +1640,10 @@ form #submitButton:hover {
     display: none;
   }
   #rowTwo {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    margin-left: calc(5vw - 10px);
+    margin-right: calc(5vw - 10px);
   }
   #rowTwo > div {
     padding: 5px;
@@ -1654,7 +1652,6 @@ form #submitButton:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 5px;
   }
   #rowTwo div:nth-child(1) {
     height: 30vh;
