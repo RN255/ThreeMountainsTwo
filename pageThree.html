@@ -15,7 +15,9 @@
   <body>
     <section class="page-three-header">
       <nav>
-        <a href="index.html"><img src="images/mountain.png" alt="logo" /></a>
+        <a href="index.html"
+          ><img src="images/mountainWhite.png" alt="logo"
+        /></a>
         <div class="nav-links" id="navLinks">
           <button class="nav-close" onclick="hideMenu()">Close</button>
           <ul>
@@ -116,96 +118,44 @@
 
     <!-- call to action -->
 
-    <section class="cta">
+    <section id="footer">
       <div id="footerTitleDiv">
         <a href="index.html">
-          <img src="images/mountain.png" alt="logo" />
           <h1>Three Mountains in daejeon</h1>
+          <img src="images/mountainWhite.png" alt="logo" />
         </a>
       </div>
-      <div id="footerColumns">
-        <div>
-          <h4>Mountains</h4>
-          <ul>
-            <li><a href="pageOne.html">Gye-Jok-San</a></li>
-            <li><a href="pageTwo.html">Gu-Bong-San</a></li>
-            <li><a href="pageThree.html">Sik-Jang-San</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Information</h4>
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacyPolicy.html">Privacy policy</a></li>
-            <!-- <li><a href="pageThree.html">Other</a></li> -->
-          </ul>
-        </div>
+      <p>
+        Daejeon <br />
+        35242 <br />
+        Republic of Korea
+      </p>
+      <div id="contactHolder">
+        <p>mail@Daejeon.com</p>
+        <p>+82-42-120</p>
       </div>
       <div id="SMicons">
-        <a href="#"><img src="images\facebook.png" alt="facebook icon" /></a>
-        <a href="#"><img src="images\youtube.png" alt="youtube icon" /></a>
-        <a href="#"><img src="images\twitter.png" alt="twitter icon" /></a>
-        <a href="#"><img src="images\instagram.png" alt="instagram icon" /></a>
+        <a href="#"><img src="images/facebook-64.png" alt="facebook icon" /></a>
+        <a href="#"><img src="images/twitter-64.png" alt="youtube icon" /></a>
+        <a href="#"
+          ><img src="images/linkedin-3-64.png" alt="twitter icon"
+        /></a>
+        <a href="#"
+          ><img src="images/instagram-64.png" alt="instagram icon"
+        /></a>
+      </div>
+      <div id="copywriteInfo">
+        <p>
+          © 2023 Three mountains in Daejeon - <a href="#">privacy policy</a>
+        </p>
+        <p>Website created by 로버트 닉슨</p>
       </div>
     </section>
 
-    <!-- javascript for menu -->
+    <div id="returnToTopButton">
+      <a href="#"><img src="images\arrow-142-64.png" alt="" /></a>
+    </div>
 
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-        openbutton.style.opacity = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-        openbutton.style.opacity = "1";
-      }
-
-      // weather API
-
-      // Declaring the variables
-      let lon;
-      let lat;
-      let temperature = document.querySelector(".temp");
-      let summary = document.querySelector(".summary");
-      let loc = document.querySelector(".location");
-      let icon = document.querySelector(".icon");
-      const kelvin = 273;
-
-      window.addEventListener("load", () => {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition((position) => {
-            console.log(position);
-            lon = position.coords.longitude;
-            lat = position.coords.latitude;
-
-            // API ID
-            const api = "23d87b1d4de10f8bbd9992355ca9a59a";
-
-            // API URL
-            const base = `http://api.openweathermap.org/data/2.5/weather?id=1835224&appid=23d87b1d4de10f8bbd9992355ca9a59a`;
-
-            // Calling the API
-            fetch(base)
-              .then((response) => {
-                return response.json();
-              })
-              .then((data) => {
-                console.log(data);
-                temperature.textContent =
-                  Math.floor(data.main.temp - kelvin) + "°C";
-                summary.textContent = data.weather[0].description;
-                loc.textContent = data.name + "," + data.sys.country;
-                let icon1 = data.weather[0].icon;
-                icon.innerHTML = `<img src=http://openweathermap.org/img/wn/${icon1}@2x.png>`;
-                console.log("${icon1}");
-              });
-          });
-        }
-      });
-    </script>
+    <script src="pagesScript.js"></script>
   </body>
 </html>
