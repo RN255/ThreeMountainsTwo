@@ -11,10 +11,10 @@ $blue-2: #0d68ca;
 $primary-background-color: rgb(255, 255, 255);
 
 // set text color based on background color
-@function set-text-color($color) {
-  @if (lightness($color) > 70) {
-    @return rgb(0, 0, 0);
-  } @else {
-    @return rgb(255, 255, 255);
-  }
-}
+// @function set-text-color($color) {
+//   @if (lightness($color) > 70) {
+//     @return rgb(0, 0, 0);
+//   } @else {
+//     @return rgb(255, 255, 255);
+//   }
+// }
